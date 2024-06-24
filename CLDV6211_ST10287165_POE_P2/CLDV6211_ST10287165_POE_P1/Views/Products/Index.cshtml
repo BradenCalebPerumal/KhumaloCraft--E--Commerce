@@ -1,0 +1,445 @@
+﻿@model IEnumerable<CLDV6211_ST10287165_POE_P1.Models.Product>
+@{
+    ViewData["Title"] = "Index";
+    bool isClientLoggedIn = Context.Session.GetString("IsClientLoggedIn") == "true";
+    bool isLoggedIn = Context.Session.GetString("IsLoggedIn") == "true";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    .card {
+        width: 18rem;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .in-stock {
+        font-weight: bold;
+        color: green;
+    }
+
+    .out-of-stock {
+        font-weight: bold;
+        color: red;
+    }
+
+    .card:hover {
+        filter: brightness(85%);
+        transform: scale(1.05);
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+        border-bottom: 2px solid black; /* Adds a bottom border just below the image */
+    }
+
+    .card-price-category {
+        padding: 0.5rem;
+    }
+
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        white-space: nowrap; /* Prevents text from wrapping */
+        overflow: hidden; /* Keeps the text within the fixed width */
+        text-overflow: ellipsis; /* Adds '...' at the end if the text overflows */
+    }
+
+    .card-text {
+        margin-bottom: 0.5rem;
+    }
+
+    .search-bar {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+        .search-bar .form-control {
+            border-radius: 0.25rem;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ced4da;
+            transition: box-shadow 0.3s ease, border 0.3s ease;
+        }
+
+            .search-bar .form-control:focus,
+            .search-bar .form-control:hover {
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                border: 1px solid #283593;
+                background-color: #e0f7fa; /* Light blue background */
+            }
+
+    .btn-primary {
+        background-color: #283593;
+        border-color: #283593;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #1e3a5f;
+            border-color: #1e3a5f;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    .card-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .quantity-input {
+        width: 50px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .quick-add-to-cart {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #283593;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+        .quick-add-to-cart:hover {
+            background-color: #1e3a5f;
+        }
+
+    .modal-header {
+        background-color: darkblue;
+        color: white;
+    }
+
+    .modal-title {
+        color: white;
+        font-weight: bold;
+    }
+
+    .modal-footer .btn-secondary {
+        background-color: #283593;
+        color: white;
+    }
+
+        .modal-footer .btn-secondary:hover {
+            background-color: #1e3a5f;
+        }
+
+    .error-message {
+        color: red;
+        display: none;
+    }
+
+    #loginRequiredModal .modal-content {
+        border-color: white; /* Red border */
+        background-color: lightgray; /* Red background */
+    }
+
+    #loginRequiredModal .modal-header {
+        background-color: Red; /* Red background */
+        color: white; /* White text */
+    }
+
+    #loginRequiredModal .modal-body {
+        background-color: white; /* Light red background */
+        color: black;
+        font-weight: bold;
+    }
+
+    #loginRequiredModal .modal-footer {
+        background-color: white; /* Very light red */
+    }
+
+    #loginRequiredModal .btn-primary {
+        background-color: #c9302c; /* Darker red */
+        border-color: lightgray; /* Even darker red border */
+    }
+
+    #loginRequiredModal .btn-secondary {
+        background-color: Black;
+        color: black;
+        border-color: lightgray; /* Red border */
+    }
+
+    #loginRequiredModal .btn-primary:hover {
+        background-color: #ac2925; /* Even darker red on hover */
+        border-color: #761c19;
+    }
+
+    #loginRequiredModal .btn-secondary:hover {
+        background-color: #e6e6e6;
+        color: #c9302c;
+    }
+</style>
+<div class="container">
+    <form method="get" action="@Url.Action("Index", "Products")" class="search-bar">
+        <input type="text" name="searchString" class="form-control mb-2" placeholder="Search by product name" value="@ViewBag.SearchString">
+        <select name="categoryId" class="form-control mb-2">
+            <option value="">All Categories</option>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <option value="@category.CategoryId">@category.Name</option>
+            }
+        </select>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+    </form>
+
+    @if (isLoggedIn)
+    {
+        @if (Model == null || !Model.Any())
+        {
+            <p>No products available.</p>
+        }
+        else
+        {
+            <div id="product-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                @foreach (var product in Model)
+                {
+                    <div class="card product-card" data-name="@product.Name" data-category="@product.Category.Name " onclick="showProductDetails(@product.Id)">
+                        @if (product.ImageType == "Upload")
+                        {
+                            <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                        }
+                        else if (product.ImageType == "Url")
+                        {
+                            <img src="@Url.Content(product.ImageUrl)" class="card-img-top" alt="@product.Name">
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text">Category: @product.Category.Name.ToUpper()</p>
+                            <p class="card-text @(product.Quantity > 0 ? "in-stock" : "out-of-stock")">
+                                <strong>Status:</strong> @(product.Quantity > 0 ? "In Stock" : "Out of Stock")
+                            </p>
+                            <p class="card-text"><strong>Items available:</strong> @product.Quantity</p>
+                            <p class="card-price">Price: R @product.Price</p>
+                            <div>
+                                <button class="quick-add-to-cart" onclick="event.stopPropagation(); addToCartQuick(@product.Id)">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                                <p class="error-message" id="error-@product.Id">Exceeds available items</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <p id="no-products-message" style="display:none;">No products match your search criteria.</p>
+        }
+    }
+    else
+    {
+        <div id="product-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+            @foreach (var product in Model)
+            {
+                <div class="card product-card" data-name="@product.Name" data-category="@product.Category.Name" onclick="showProductDetails(@product.Id)" >
+                    @if (product.ImageType == "Upload")
+                    {
+                        <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                    }
+                    else if (product.ImageType == "Url")
+                    {
+                        <img src="@Url.Content(product.ImageUrl)" class="card-img-top" alt="@product.Name">
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">Category: @product.Category.Name.ToUpper()</p>
+                        <p class="card-text @(product.Quantity > 0 ? "in-stock" : "out-of-stock")">
+                            <strong>Status:</strong> @(product.Quantity > 0 ? "In Stock" : "Out of Stock")
+                        </p>
+                        <p class="card-text"><strong>Items available:</strong> @product.Quantity</p>
+                        <p class="card-price">Price: R @product.Price</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <p id="no-products-message" style="display:none;">No products match your search criteria.</p>
+    }
+
+    @if (isLoggedIn)
+    {
+        <!-- Product Details Modal -->
+        <div class="modal fade" id="productDetailsModal" tabindex="-1" role="dialog" aria-labelledby="productDetailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productDetailsModalLabel">Product Details</h5>
+                    </div>
+                    <div class="modal-body" id="productDetailsContent">
+                        <!-- Product details will be loaded here -->
+                    </div>
+                    <div class="modal-footer">
+                        <p>Qnty:</p>
+                        <input type="number" id="modal-quantity" class="quantity-input" value="1" min="1" />
+                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="addToCartFromModal()">Add to Cart</button>
+                        <p class="error-message" id="modal-error-message">Exceeds available items</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Product Details Modal -->
+        <div class="modal fade" id="productDetailsModal" tabindex="-1" role="dialog" aria-labelledby="productDetailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productDetailsModalLabel">Product Details</h5>
+                    </div>
+                    <div class="modal-body" id="productDetailsContent">
+                        <!-- Product details will be loaded here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="addToCartFromModalLoggedIn()">Add to Cart</button>
+                        <div class="modal fade" id="loginRequiredModal" tabindex="-1" role="dialog" aria-labelledby="loginRequiredModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="loginRequiredModalLabel">Login Required</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>You must be logged in to add items to the cart.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="/Customers/Login" class="btn btn-primary">Login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @section Scripts {
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function filterProducts() {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                const categoryFilter = document.getElementById('categoryFilter').value;
+
+                let productsFound = false;
+
+                document.querySelectorAll('.product-card').forEach(card => {
+                    const productName = card.getAttribute('data-name').toLowerCase();
+                    const productCategory = card.getAttribute('data-category');
+
+                    const matchesSearch = productName.includes(searchInput);
+                    const matchesCategory = !categoryFilter || productCategory === categoryFilter;
+
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = '';
+                        productsFound = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('no-products-message').style.display = productsFound ? 'none' : 'block';
+            }
+
+            let selectedProductId = null;
+            let availableQuantity = 0;
+
+            function showProductDetails(productId) {
+                $.get('@Url.Action("GetProductDetails", "Products")', { id: productId }, function (data) {
+                    $('#productDetailsContent').html(data);
+                    $('#productDetailsModal').modal('show');
+
+                    // Set the selected product id and available quantity
+                    selectedProductId = productId;
+                    availableQuantity = parseInt($('#quantity-' + productId).attr('max'));
+                    $('#modal-quantity').attr('max', availableQuantity);
+                    $('#modal-quantity').val(1);
+                    $('#modal-error-message').hide();
+                });
+            }
+
+            function addToCartFromModal() {
+                const quantity = parseInt($('#modal-quantity').val());
+
+                if (quantity > availableQuantity) {
+                    $('#modal-error-message').show();
+                    $('#modal-quantity').css('border-color', 'red');
+                } else {
+                    $.post('@Url.Action("AddToCart", "CartItems")', { productId: selectedProductId, quantity: quantity }, function () {
+                        window.location.reload();
+                    });
+                }
+            }
+
+            function addToCartFromModalLoggedIn() {
+                $('#loginRequiredModal').modal('show');
+            }
+
+            function addToCartQuick(productId) {
+                const quantityInput = document.getElementById(`quantity-${productId}`);
+                const quantity = parseInt(quantityInput.value);
+                const maxQuantity = parseInt(quantityInput.max);
+
+                if (quantity > maxQuantity) {
+                    const errorMessage = document.getElementById(`error-${productId}`);
+                    errorMessage.style.display = 'block';
+                    quantityInput.style.borderColor = 'red';
+                } else {
+                    $.post('@Url.Action("AddToCart", "CartItems")', { productId: productId, quantity: quantity }, function () {
+                        window.location.reload();
+                    });
+                }
+            }
+
+            document.querySelectorAll('.btn-primary').forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.stopPropagation(); // Prevent the toggle function from firing
+                });
+            });
+
+            function closeModal() {
+                $('#productDetailsModal').modal('hide');
+            }
+
+            function sendQuantityUpdate(cartItemId, quantity) {
+                $.ajax({
+                    url: '/CartItems/UpdateQuantity',
+                    type: 'POST',
+                    data: {
+                        cartItemId: cartItemId,
+                        quantity: quantity
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            updateCartCount(response.cartCount); // Update cart count dynamically
+                            console.log('Quantity updated successfully!');
+                        } else {
+                            console.error('Error updating quantity:', response.message);
+                        }
+                    },
+                    error: function (error) {
+                        console.error('Error updating quantity: ' + error);
+                    }
+                });
+            }
+        </script>
+    }

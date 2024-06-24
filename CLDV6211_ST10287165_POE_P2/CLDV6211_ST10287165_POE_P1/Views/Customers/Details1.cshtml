@@ -1,0 +1,116 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        dl.row {
+            padding: 0;
+            margin: 0;
+        }
+
+        dt {
+            text-align: left;
+            padding: 8px;
+            width: 20%;
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #ddd;
+        }
+
+        dd {
+            text-align: left;
+            padding: 8px;
+            width: 80%;
+            border-bottom: 1px solid #ddd;
+            margin-left: 0;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+        }
+
+            .btn-primary:hover {
+                background-color: #45a049;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #283593;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Customer Details</div>
+
+    <div class="container">
+        <h4>Customer</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">Username:</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.CustEmail)</dd>
+            <dt class="col-sm-2">Password:</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.CustPasswordHash)</dd>
+        </dl>
+        <div class="form-group">
+            <a asp-action="Edit1" asp-route-id="@Model.CustId" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" asp-controller="Products" class="btn btn-secondary">Back </a>
+        </div>
+    </div>
+
+</body>
+</html>

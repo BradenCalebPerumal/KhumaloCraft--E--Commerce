@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    .signup-container {
+        background: #e8f0fe; /* Light blue background */
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .signup-title {
+        color: #204a87; /* Deep blue for the title */
+        text-align: center;
+    }
+
+    .signup-intro {
+        text-align: center;
+        color: #3266a8; /* Medium blue for introductory text */
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #c6d9f1; /* Soft blue border for input fields */
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: darkblue; /* Strong blue for the button */
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="signup-container">
+    <h2 class="signup-title">Client Sign Up</h2>
+    <p class="signup-intro">
+        Please enter your details to be a part of our community.
+    </p>
+    <form asp-action="SignUp" method="post" class="signup-form" id="signup-form">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" name="ClientFirstName" class="form-control" id="firstName" >
+          
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="LastName" class="form-control" id="lastName" >
+            
+        </div>
+        <div class="form-group">
+            <label for="cellNum">Cell Number</label>
+            <input type="text" name="cellNum" class="form-control" id="cellNum" >
+            
+        </div>
+        <div class="form-group">
+            <label for="identityNum">Identity Number</label>
+            <input type="text" name="IdentityNum" class="form-control" id="identityNum" >
+           
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="Email" class="form-control" id="email" >
+           
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="Username" class="form-control" id="username" >
+           
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="Password" class="form-control" id="password" >
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<script>
+    // JavaScript code to handle form submission and display fireworks
+    document.getElementById('signup-form').addEventListener('submit', function (event) {
+        // After successful signup, call the showFireworks function
+        showFireworks();
+    });
+
+    function showFireworks() {
+        // Get the viewport dimensions
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Calculate the number of fireworks based on viewport size
+        const numFireworks = Math.floor(viewportWidth * viewportHeight / 50000); // Adjust this factor for density
+
+        // Get the container to append fireworks
+        const container = document.querySelector('body');
+
+        // Create and append multiple fireworks elements to the container
+        for (let i = 0; i < numFireworks; i++) {
+            const fireworks = document.createElement('div');
+            fireworks.classList.add('firework');
+
+            // Randomize position within the viewport
+            const randomX = Math.random() * viewportWidth;
+            const randomY = Math.random() * viewportHeight;
+            fireworks.style.left = `${randomX}px`;
+            fireworks.style.top = `${randomY}px`;
+
+            container.appendChild(fireworks);
+
+            // Remove the fireworks element after animation ends
+            fireworks.addEventListener('animationend', function () {
+                container.removeChild(fireworks);
+            });
+        }
+    }
+</script>
+<link rel="stylesheet" href="~/css/styles.css">

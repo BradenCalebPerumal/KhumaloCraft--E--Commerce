@@ -1,0 +1,537 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240624161108_afters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CLDV6211_ST10287165_POE_P1\\Migrations\\20240624161108_afters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|c:\\users\\caleb\\onedrive - dlssa\\pictures\\cldv6211_st10287165_poe_p2\\cldv6211_st10287165_poe_p1\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|c:\\users\\caleb\\onedrive - dlssa\\pictures\\cldv6211_st10287165_poe_p2\\cldv6211_st10287165_poe_p1\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\orders\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\orders\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\customers\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\customers\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\clients\\listedproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\clients\\listedproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\orderdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\orderdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\customers\\viewprocessedorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\customers\\viewprocessedorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\clients\\loginn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\clients\\loginn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\checkoutviewmodels\\submitorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\checkoutviewmodels\\submitorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\checkoutviewmodels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\checkoutviewmodels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\cartitems\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\cartitems\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\admins\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\admins\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\admins\\newadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\admins\\newadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\wwwroot\\css\\styles1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\wwwroot\\css\\styles1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\wwwroot\\css\\modal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\wwwroot\\css\\modal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\data\\cldv6211_st10287165_poe_p1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\data\\cldv6211_st10287165_poe_p1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\cldv6211_st10287165_poe_p1\\views\\customers\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:cldv6211_st10287165_poe_p1\\views\\customers\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240521210415_udate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:CLDV6211_ST10287165_POE_P1\\Migrations\\20240521210415_udate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240622213624_testwer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:CLDV6211_ST10287165_POE_P1\\Migrations\\20240622213624_testwer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240622212627_aftersql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12BE980-8ED0-4336-84AF-49D3C9346834}|CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj|solutionrelative:CLDV6211_ST10287165_POE_P1\\Migrations\\20240622212627_aftersql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240624161108_afters.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240624161108_afters.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240624161108_afters.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240624161108_afters.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240624161108_afters.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:11:08.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Models\\Order.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T13:40:16.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20240622212627_aftersql.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240622212627_aftersql.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240622212627_aftersql.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240622212627_aftersql.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240622212627_aftersql.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T21:26:27.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\appsettings.json",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\appsettings.json",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\appsettings.json",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-22T21:13:11.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Program.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Program.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Program.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T21:13:11.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Orders\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Orders\\OrderConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Orders\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Orders\\OrderConfirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T11:32:35.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAACsBAAAAAAAAAADwvzsBAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:32:34.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Controllers\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Controllers\\OrderDetailsController.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Controllers\\OrderDetailsController.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Controllers\\OrderDetailsController.cs",
+              "ViewState": "AQIAALAAAAAAAAAAAAAwwMYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:05:58.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20240622213624_testwer.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240622213624_testwer.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240622213624_testwer.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240622213624_testwer.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240622213624_testwer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T21:36:24.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwDgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T13:50:52.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ListedProducts.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Clients\\ListedProducts.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Clients\\ListedProducts.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Clients\\ListedProducts.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Clients\\ListedProducts.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T12:01:27.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKIBAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T21:07:28.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:49:22.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\OrderDetails\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\OrderDetails\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\OrderDetails\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\OrderDetails\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:48:42.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ViewProcessedOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\ViewProcessedOrders.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\ViewProcessedOrders.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\ViewProcessedOrders.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\ViewProcessedOrders.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:47:48.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T09:59:43.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T10:41:27.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Loginn.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Loginn.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Loginn.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Loginn.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Clients\\Loginn.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T14:01:40.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SubmitOrder.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\SubmitOrder.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\SubmitOrder.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\SubmitOrder.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\SubmitOrder.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:46:07.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\CheckoutViewModels\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:46:02.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\CartItems\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\CartItems\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\CartItems\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\CartItems\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:45:22.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T20:31:27.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NewAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Admins\\NewAdmin.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Admins\\NewAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Admins\\NewAdmin.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Admins\\NewAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T13:14:39.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Index.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Index.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:44:44.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Profile.cshtml",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Profile.cshtml",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Admins\\Profile.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAAUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T11:06:39.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAFEBAAAAAAAAAAAuwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:34:36.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Models\\Product.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Models\\Product.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:32:10.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "styles1.css",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\styles1.css",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\styles1.css",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\styles1.css",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\styles1.css",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAH4AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-20T12:13:18.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "modal.css",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\modal.css",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\modal.css",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\modal.css",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\modal.css",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-24T09:43:50.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20240521210415_udate.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240521210415_udate.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240521210415_udate.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Migrations\\20240521210415_udate.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Migrations\\20240521210415_udate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:04:16.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CLDV6211_ST10287165_POE_P1Context.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Data\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Data\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Data\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Data\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAA3wCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:26:39.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SignUp.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml.cs",
+              "RelativeDocumentMoniker": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml.cs",
+              "ToolTip": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml.cs",
+              "RelativeToolTip": "CLDV6211_ST10287165_POE_P1\\Views\\Customers\\SignUp.cshtml.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAlwAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T10:33:16.535Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

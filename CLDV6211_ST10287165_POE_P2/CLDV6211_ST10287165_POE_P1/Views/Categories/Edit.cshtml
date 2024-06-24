@@ -1,0 +1,125 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Category
+
+@{
+    ViewData["Title"] = "Edit Category";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Category - KhumaloCraft Emporium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .content-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-container h4 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+            color: #fff;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #45a049;
+            border-color: #45a049;
+        }
+
+        .btn-secondary {
+            background-color: #5bc0de;
+            border-color: #46b8da;
+            color: #fff;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .btn-secondary:hover {
+            background-color: #31b0d5;
+            border-color: #269abc;
+        }
+
+        .back-to-list a {
+            color: #283593;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-list a:hover {
+            color: #1e2f5a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Edit Category</div>
+        <div class="content-container">
+            <h4>Category</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="CategoryId" />
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="back-to-list">
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
+</html>

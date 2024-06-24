@@ -1,0 +1,129 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Customer
+
+@{
+    ViewData["Title"] = "Edit Client";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/styles1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Client - KhumaloCraft Emporium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #283593;
+            border-color: #283593;
+        }
+
+            .btn-primary:hover {
+                background-color: #1e3a5f;
+                border-color: #1e3a5f;
+            }
+
+        .text-danger {
+            color: #dc3545;
+        }
+
+        .success-message {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Edit Client</div>
+
+    <div class="container">
+        <h4>Client</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <form id="edit-form" asp-action="Edit" method="post" onsubmit="showLoadingAnimation(event)">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="CustId" />
+                    <div class="form-group">
+                        <label for="CustEmail" class="control-label">Username</label>
+                        <input asp-for="CustEmail" class="form-control" id="CustEmail" />
+                        <span asp-validation-for="CustEmail" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="CustPasswordHash" class="control-label">Password</label>
+                        <input asp-for="CustPasswordHash" class="form-control" id="CustPasswordHash" />
+                        <span asp-validation-for="CustPasswordHash" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="loader"></div>
+    </div>
+
+    <div class="success-message" id="success-message">
+        <i class="fa fa-thumbs-up"></i> Successfully updated!
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+        <script>
+            function showLoadingAnimation(event) {
+                event.preventDefault();
+                document.getElementById('overlay').style.display = 'flex';
+
+                // Simulate form submission delay
+                setTimeout(function () {
+                    document.getElementById('overlay').style.display = 'none';
+                    document.getElementById('success-message').style.display = 'block';
+
+                    setTimeout(function () {
+                        document.getElementById('success-message').style.display = 'none';
+                        document.getElementById('edit-form').submit(); // Ensure the form actually submits
+                    }, 2000);
+                }, 2000);
+            }
+        </script>
+    }
+</body>
+</html>

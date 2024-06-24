@@ -1,0 +1,72 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1>Checkout</h1>
+
+<form asp-action="OrderConfirmation" asp-controller="Orders" method="post" id="checkoutForm">
+    <div class="form-group">
+        <label asp-for="ShippingAddress" class="control-label">Shipping Address</label>
+        <input asp-for="ShippingAddress" class="form-control" required />
+        <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="City" class="control-label">City</label>
+        <input asp-for="City" class="form-control" required />
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PostalCode" class="control-label">Postal Code</label>
+        <input asp-for="PostalCode" class="form-control" required />
+        <span asp-validation-for="PostalCode" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Country" class="control-label">Country</label>
+        <input asp-for="Country" class="form-control" required />
+        <span asp-validation-for="Country" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PaymentMethod" class="control-label">Payment Method</label>
+        <select asp-for="PaymentMethod" class="form-control" onchange="toggleCreditCardFields()">
+            <option value="">Select a payment method</option>
+            <option value="COD">Cash on Delivery</option>
+            <option value="Card">Card Payment</option>
+        </select>
+    </div>
+
+    <div id="creditCardInfo" style="display:none;">
+        <div class="form-group">
+            <label asp-for="CreditCardNumber" class="control-label">Credit Card Number</label>
+            <input asp-for="CreditCardNumber" class="form-control" />
+            <span asp-validation-for="CreditCardNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ExpiryDate" class="control-label">Expiry Date</label>
+            <input asp-for="ExpiryDate" class="form-control" />
+            <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CVV" class="control-label">CVV</label>
+            <input asp-for="CVV" class="form-control" />
+            <span asp-validation-for="CVV" class="text-danger"></span>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Order</button>
+</form>
+
+@section Scripts {
+    <script>
+        function toggleCreditCardFields() {
+            var paymentMethod = document.getElementById('PaymentMethod').value;
+            var creditCardInfo = document.getElementById('creditCardInfo');
+            if (paymentMethod === 'Card') {
+                creditCardInfo.style.display = 'block';
+            } else {
+                creditCardInfo.style.display = 'none';
+            }
+        }
+    </script>
+}

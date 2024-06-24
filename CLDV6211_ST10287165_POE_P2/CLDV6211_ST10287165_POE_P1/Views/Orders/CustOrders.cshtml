@@ -1,0 +1,134 @@
+﻿@model IEnumerable<CLDV6211_ST10287165_POE_P1.Models.Order>
+
+@{
+    ViewData["Title"] = "Your Orders";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders - KhumaloCraft Emporium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="~/css/modal.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .main-content {
+            padding-bottom: 20px;
+        }
+
+        .table {
+            width: 100%;
+            max-width: 1200px; /* Adjust the max-width as needed */
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .table th, .table td {
+                padding: 15px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .table th {
+                background-color: #283593;
+                color: #fff;
+                white-space: nowrap;
+            }
+
+            .table td {
+                white-space: nowrap;
+            }
+
+            .table tr:hover {
+                background-color: #f5f5f5;
+            }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            max-width: 1200px; /* Adjust the max-width as needed */
+        }
+
+        .order-summary {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .order-summary h3 {
+                margin-top: 0;
+                font-size: 1.5rem;
+            }
+
+            .order-summary p {
+                margin: 5px 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="header">Your Orders</div>
+            @if (!Model.Any())
+            {
+                <p>You have no orders.</p>
+            }
+            else
+            {
+                @foreach (var order in Model)
+                {
+                    <div class="order-summary">
+                        <h3>Order @order.OrderId - @order.OrderDate.ToString("dd MMM yyyy")</h3>
+                        <p>Status: <strong style="color: @(order.OrderStatus == "Processed" ? "#28a745" : "#ffa500")">@order.OrderStatus</strong></p>
+                        <p>Shipping Address: @order.ShippingAddress, @order.City, @order.PostalCode, @order.Country</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var detail in order.OrderDetails)
+                                {
+                                    <tr>
+                                        <td>@detail.Product.Name</td>
+                                        <td>@detail.Quantity</td>
+                                        <td>R @detail.Price</td>
+                                        <td>@order.OrderStatus</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>

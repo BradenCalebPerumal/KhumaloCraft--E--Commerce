@@ -1,0 +1,265 @@
+﻿@model IEnumerable<CLDV6211_ST10287165_POE_P1.Models.Product>
+@{
+    ViewData["Title"] = "Edit Products";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Products - KhumaloCraft Emporium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+            .search-bar input {
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+                .search-bar input:focus {
+                    box-shadow: 0 0 10px #283593;
+                    outline: none;
+                }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .table th, .table td {
+                padding: 15px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .table th {
+                background-color: #283593;
+                color: #fff;
+            }
+
+            .table tr:hover {
+                background-color: #f5f5f5;
+            }
+
+        .btn-primary {
+            background-color: #283593;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+            .btn-primary:hover {
+                background-color: #1e3a5f;
+            }
+
+        .btn-danger {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+            .btn-danger:hover {
+                background-color: #c9302c;
+            }
+
+        .btn-info {
+            background-color: #5bc0de;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+            .btn-info:hover {
+                background-color: #31b0d5;
+            }
+
+        .modal-header {
+            background-color: #283593;
+            color: #fff;
+        }
+
+        .modal-title {
+            color: #fff;
+        }
+
+        .modal-footer .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+
+            .modal-footer .btn-secondary:hover {
+                background-color: #5a6268;
+            }
+
+        .truncate {
+            max-width: 150px; /* Adjust based on your specific layout needs */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Edit Products</div>
+        <div class="search-bar">
+            <input type="text" id="searchProductName" class="form-control" placeholder="Search by Product Name" onkeyup="filterProducts()">
+        </div>
+        <table class="table" id="productsTable">
+            <thead>
+                <tr>
+                    <th>     </th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>       </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td><img src="@product.ImageUrl" alt="@product.Name" class="img-fluid" style="width:100px;"></td>
+                        <td class="truncate">@product.Name</td>
+                        <td>@product.Category.Name</td>
+                        <td>@product.Quantity</td>
+                        <td>R @product.Price</td>
+                        <td>
+                            <a href="@Url.Action("EditProduct", new { id = product.Id })" class="btn btn-primary">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <button type="button" class="btn btn-danger" onclick="confirmDelete(@product.Id)">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button type="button" class="btn btn-info" onclick="showProductDetails(@product.Id)">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div class="modal fade" id="productDetailsModal" tabindex="-1" role="dialog" aria-labelledby="productDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productDetailsModalLabel">Product Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="productDetailsContent">
+                    <!-- Product details will be dynamically loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function filterProducts() {
+            const searchProductName = document.getElementById('searchProductName').value.toLowerCase();
+            const table = document.getElementById('productsTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                const productNameCell = row.getElementsByTagName('td')[1];
+                const productName = productNameCell.textContent || productNameCell.innerText;
+
+                if (productName.toLowerCase().includes(searchProductName)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            }
+        }
+        function confirmDelete(productId) {
+            const confirmation = prompt("Type 'delete' to delete product:");
+            if (confirmation === 'delete') {
+                const form = document.createElement('form');
+                form.method = 'post';
+                form.action = '@Url.Action("DeleteProduct", "Clients")';
+
+                const idField = document.createElement('input');
+                idField.type = 'hidden';
+                idField.name = 'id';
+                idField.value = productId;
+                form.appendChild(idField);
+
+                const confirmationField = document.createElement('input');
+                confirmationField.type = 'hidden';
+                confirmationField.name = 'confirmation';
+                confirmationField.value = 'delete';
+                form.appendChild(confirmationField);
+
+                document.body.appendChild(form);
+                form.submit();
+            }
+        }
+
+        function showProductDetails(productId) {
+            $.get('@Url.Action("GetProductDetails", "Products")', { id: productId }, function (data) {
+                $('#productDetailsContent').html(data);
+                $('#productDetailsModal').modal('show');
+            });
+        } function closeModal() {
+            $('#productDetailsModal').modal('hide');
+        }
+
+    </script>
+</body>
+</html>

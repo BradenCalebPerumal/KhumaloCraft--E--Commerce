@@ -1,0 +1,168 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    .login-container {
+        background: #e8f0fe; /* Light blue background */
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .login-title {
+        color: #204a87; /* Deep blue for the title */
+        text-align: center;
+    }
+
+    .login-intro {
+        text-align: center;
+        color: #3266a8; /* Medium blue for introductory text */
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #c6d9f1; /* Soft blue border for input fields */
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: darkblue; /* Strong blue for the button */
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .firework {
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        background: #ffcc00;
+        border-radius: 50%;
+        animation: explode 1s ease-out forwards;
+    }
+
+    explode {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(5);
+            opacity: 0;
+        }
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .loader {
+        border: 8px solid #f3f3f3; /* Light grey */
+        border-top: 8px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+    }
+
+    spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
+<div class="login-container">
+    <!-- Using the same class for consistent styling -->
+    <h2 class="login-title">Customer Sign Up</h2>
+    <p class="login-intro">Create your account to join our community.</p>
+    <form id="signup-form" asp-action="SignUp" asp-controller="Customers" method="post" class="signup-form">
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+
+<div class="overlay" id="overlay">
+    <div class="loader" id="loader"></div>
+</div>
+
+<script>
+    document.getElementById('signup-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Display the loading animation immediately upon form submission
+        document.getElementById('overlay').style.display = 'flex';
+
+        // Simulate form submission delay
+        setTimeout(function () {
+            // Remove the loading animation after the delay
+            document.getElementById('overlay').style.display = 'none';
+
+            // Call the showFireworks function after the form submission delay
+            showFireworks();
+
+            // Submit the form
+            document.getElementById('signup-form').submit();
+        }, 2000); // Adjust this delay as needed to match the actual loading time
+    });
+
+    function showFireworks() {
+        // Get the viewport dimensions
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Calculate the number of fireworks based on viewport size
+        const numFireworks = Math.floor(viewportWidth * viewportHeight / 50000); // Adjust this factor for density
+
+        // Get the container to append fireworks
+        const container = document.querySelector('body');
+
+        // Create and append multiple fireworks elements to the container
+        for (let i = 0; i < numFireworks; i++) {
+            const fireworks = document.createElement('div');
+            fireworks.classList.add('firework');
+
+            // Randomize position within the viewport
+            const randomX = Math.random() * viewportWidth;
+            const randomY = Math.random() * viewportHeight;
+            fireworks.style.left = `${randomX}px`;
+            fireworks.style.top = `${randomY}px`;
+
+            container.appendChild(fireworks);
+
+            // Remove the fireworks element after animation ends
+            fireworks.addEventListener('animationend', function () {
+                container.removeChild(fireworks);
+            });
+        }
+    }
+</script>
+<link rel="stylesheet" href="~/css/styles.css">

@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+
+    .login-container {
+        background: #e8f0fe; /* Light blue background */
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .login-title {
+        color: #204a87; /* Deep blue for the title */
+        text-align: center;
+    }
+
+    .login-intro {
+        text-align: center;
+        color: #3266a8; /* Medium blue for introductory text */
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #c6d9f1; /* Soft blue border for input fields */
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: darkblue; /* Strong blue for the button */
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .signup-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+        .signup-link a {
+            color: #3479c6; /* Vivid blue for the sign-up link */
+            text-decoration: none;
+        }
+
+
+
+
+
+
+</style>
+<div class="login-container">
+    <h2 class="login-title">Customer Login</h2>
+    <p class="login-intro">Please enter your details to continue to your account.</p>
+    <form asp-action="Login" method="post" class="login-form">
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Log In</button>
+    </form>
+    <div class="signup-link">
+        <a href="@Url.Action("SignUp", "Customers")">New here? Sign up</a>
+    </div>
+</div>

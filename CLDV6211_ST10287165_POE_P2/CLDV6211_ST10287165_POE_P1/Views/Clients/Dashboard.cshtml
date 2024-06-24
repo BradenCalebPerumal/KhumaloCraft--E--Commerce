@@ -1,0 +1,164 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - KhumaloCraft Emporium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .main-content {
+            padding-bottom: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            background: linear-gradient(to top, #283593, #ffffff);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 150px; /* Fixed height for consistent size */
+            width: 100%; /* Ensure full width in column layout */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            .card i {
+                font-size: 2.5em; /* Increased font size for the icon */
+                margin-bottom: 10px; /* Space between the icon and the title */
+                color: white; /* White color for the icon */
+            }
+
+            .card h5 {
+                font-size: 1em; /* Reduced font size */
+                margin: 0;
+                color: black; /* Black color for text */
+                font-weight: bold;
+            }
+
+            .card a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+                .card a:hover {
+                    text-decoration: none;
+                }
+
+        .navbar {
+            font-weight: normal; /* Ensure navbar text is not bold */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-md-4 {
+            flex: 1 1 calc(33.333% - 20px); /* Three cards per row with space between */
+            box-sizing: border-box;
+        }
+
+        .line {
+            border-bottom: 2px solid #1e3a5f; /* Dark blue color for the line */
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="header">Client Dashboard</div>
+            <div class="line"></div> <!-- Line under the heading -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="@Url.Action("Create", "Products")" class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-plus-circle"></i>
+                            <h5 class="card-title">Add Product</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="@Url.Action("EditDisplay", "Products")" class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-edit"></i>
+                            <h5 class="card-title">Edit Product</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="@Url.Action("Editp", "Clients")" class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-user-circle"></i>
+                            <h5 class="card-title">View Account Details</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="@Url.Action("ListedProducts", "Clients")" class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-boxes"></i>
+                            <h5 class="card-title">View Listed Products</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="@Url.Action("ClientOrders", "OrderDetails")" class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h5 class="card-title">View Orders</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="@Url.Action("Logout", "Clients")" class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <h5 class="card-title">Logout</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

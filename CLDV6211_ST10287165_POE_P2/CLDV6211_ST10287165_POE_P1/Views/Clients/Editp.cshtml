@@ -1,0 +1,103 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Client
+
+@{
+    ViewData["Title"] = "Edit Client";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styles1.css">
+</head>
+<body>
+    <div class="header">Edit Client</div>
+
+    <div class="container">
+        <h4>Client</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form id="edit-form" asp-action="Editp" method="post" onsubmit="showLoadingAnimation(event)">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ClientId" />
+                    <div class="form-group">
+                        <label for="Username" class="control-label">Username</label>
+                        <input asp-for="Username" class="form-control" id="Username" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password" class="control-label">Password</label>
+                        <input asp-for="Password" class="form-control" id="Password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ClientFirstName" class="control-label">First Name</label>
+                        <input asp-for="ClientFirstName" class="form-control" id="ClientFirstName" />
+                        <span asp-validation-for="ClientFirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="LastName" class="control-label">Last Name</label>
+                        <input asp-for="LastName" class="form-control" id="LastName" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="control-label">Email</label>
+                        <input asp-for="Email" class="form-control" id="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="CellNum" class="control-label">Cell Number</label>
+                        <input asp-for="CellNum" class="form-control" id="CellNum" />
+                        <span asp-validation-for="CellNum" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="IdentityNum" class="control-label">Identity Number</label>
+                        <input asp-for="IdentityNum" class="form-control" id="IdentityNum" readonly />
+                        <span asp-validation-for="IdentityNum" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Products" class="control-label">Number of Listed Products</label>
+                        <input class="form-control" id="Products" value="@ViewBag.ProductsCount" readonly />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" id="overlay">
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <div class="success-message" id="success-message">
+        <i class="fa fa-thumbs-up"></i> Successfully updated!
+    </div>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+        <script>
+            function showLoadingAnimation(event) {
+                event.preventDefault();
+                document.getElementById('overlay').style.display = 'flex';
+
+                // Simulate form submission delay
+                setTimeout(function () {
+                    document.getElementById('overlay').style.display = 'none';
+                    document.getElementById('success-message').style.display = 'block';
+
+                    setTimeout(function () {
+                        document.getElementById('success-message').style.display = 'none';
+                        document.getElementById('edit-form').submit(); // Ensure the form actually submits
+                    }, 2000);
+                }, 2000);
+            }
+        </script>
+    }
+</body>
+</html>

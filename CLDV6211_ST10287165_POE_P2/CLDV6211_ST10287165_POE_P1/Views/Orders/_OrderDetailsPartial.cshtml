@@ -1,0 +1,27 @@
+﻿@model IEnumerable<CLDV6211_ST10287165_POE_P1.Models.OrderDetail>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<table class="table">
+    <thead>
+        <tr style="background-color: #283593; color: white;">
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var detail in Model)
+        {
+            <tr>
+                <td>@detail.Product.Name</td>
+                <td>@detail.Quantity</td>
+                <td>@detail.Price?.ToString("C")</td>
+                <td>R @(detail.Quantity * detail.Price)</td>
+            </tr>
+        }
+        <tr>
+            <td colspan="3" class="text-right"><strong>Total:</strong></td>
+            <td><strong>@Model.Sum(detail => detail.Quantity * detail.Price)?.ToString("C")</strong></td>
+        </tr>
+    </tbody>
+</table>

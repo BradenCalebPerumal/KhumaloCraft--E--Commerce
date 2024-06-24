@@ -1,0 +1,317 @@
+﻿@model List<CartItem>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6c7ae0;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        img.product-image {
+            width: 50px;
+            height: auto;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .quantity-input {
+            display: flex;
+            align-items: center;
+        }
+
+            .quantity-input button, .remove-btn {
+                border: none;
+                background-color: #ddd;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+                .quantity-input button:hover, .remove-btn:hover {
+                    background-color: #ccc;
+                }
+
+            .quantity-input input {
+                text-align: center;
+                width: 40px;
+                border: 1px solid #ddd;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+        .remove-btn {
+            background-color: #f44336; /* Red background for remove button */
+            color: white;
+            border-radius: 4px;
+        }
+
+        .total {
+            text-align: right;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        a.button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+            a.button:hover {
+                background-color: #45a049;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #283593;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .empty-cart {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+
+        .error-message {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Your Shopping Cart</div>
+    @if (Model.Count == 0)
+    {
+        <div class="empty-cart">Your Cart is Empty</div>
+    }
+    else
+    {
+        <table>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th> </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr id="item-row-@item.CartItemId">
+                    <td><img src="@item.Product.ImageUrl" alt="@item.Product.Name" class="product-image"></td>
+                    <td>@item.Product.Name</td>
+                    <td>
+                        <div class="quantity-input" data-available-quantity="@item.Product.Quantity">
+                            <button type="button" onclick="decreaseQuantity('@item.CartItemId', '@item.Product.Price')">-</button>
+                            <input type="text" value="@item.Quantity" id="quantity-@item.CartItemId">
+                            <button type="button" onclick="increaseQuantity('@item.CartItemId', '@item.Product.Price', @item.Product.Quantity)">+</button>
+                            <span class="error-message" id="error-@item.CartItemId">Exceeds available items</span>
+                        </div>
+                    </td>
+                    <td>@(item.Product.Price?.ToString("N2"))</td>
+                    <td id="line-total-@item.CartItemId">@((item.Quantity * item.Product.Price)?.ToString("N2"))</td>
+                    <td>
+                        <button type="button" class="remove-btn"
+                                onclick="removeFromCart('@item.CartItemId', @item.Quantity)"
+                                aria-label="Delete">
+                            <i class="fa fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="6" class="total">
+                    <strong>Total:</strong>R<span id="grand-total">@(Model.Sum(i => i.Product.Price * i.Quantity)?.ToString("N2"))</span>
+                </td>
+            </tr>
+        </table>
+        <a href="@Url.Action("Checkout", "Orders")" class="button">Checkout</a>
+    }
+
+    <div class="footer">Thank you for shopping with us!</div>
+
+    <script>
+        function increaseQuantity(cartItemId, productPrice, availableQuantity) {
+            window.location.reload();
+            var input = document.getElementById('quantity-' + cartItemId);
+            var value = parseInt(input.value, 10);
+            var errorMessage = document.getElementById('error-' + cartItemId);
+
+            value = isNaN(value) ? 0 : value;
+            if (value <= availableQuantity) {
+                value++;
+                input.value = value;
+                errorMessage.style.display = 'none';
+                updateLineTotal(cartItemId, productPrice, value);
+                sendQuantityUpdate(cartItemId, value);
+                updateCartCount(1); // Increment cart count
+
+            } else {
+                errorMessage.style.display = 'block';
+            }
+           
+        }
+
+        function decreaseQuantity(cartItemId, productPrice) {
+            window.location.reload();
+            var input = document.getElementById('quantity-' + cartItemId);
+            var value = parseInt(input.value, 10);
+            var errorMessage = document.getElementById('error-' + cartItemId);
+
+            value = isNaN(value) ? 0 : value;
+            if (value >= 1) {
+                value--;
+                input.value = value;
+                errorMessage.style.display = 'none';
+                updateLineTotal(cartItemId, productPrice, value);
+                sendQuantityUpdate(cartItemId, value);
+                updateCartCount(-1); // Decrement cart count
+            } else {
+                errorMessage.style.display = 'none';
+            }
+
+        }
+
+        function updateLineTotal(cartItemId, productPrice, quantity) {
+            productPrice = parseFloat(productPrice);  // Ensure price is a float
+            quantity = parseInt(quantity, 10);  // Ensure quantity is an integer
+
+            if (isNaN(productPrice) || isNaN(quantity)) {
+                console.error('Invalid number input', productPrice, quantity);
+                return;  // Exit if there's a problem with the numbers
+            }
+
+            var lineTotal = productPrice * quantity;
+            var lineTotalElement = document.getElementById('line-total-' + cartItemId);
+            if (lineTotalElement) {
+                lineTotalElement.innerHTML = lineTotal.toFixed(2); // Ensure 2 decimal places
+            } else {
+                console.error('Line total element not found for cart item ID:', cartItemId);
+            }
+
+            updateTotal();  // Call to update the grand total
+        }
+
+        function sendQuantityUpdate(cartItemId, quantity) {
+            $.ajax({
+                url: '@Url.Action("UpdateQuantity", "CartItems")',
+                type: 'POST',
+                data: {
+                    cartItemId: cartItemId,
+                    quantity: quantity
+                },
+                success: function (response) {
+                    if (!response.success) {
+                        // If the update failed, rollback or adjust the UI appropriately
+                        console.error('Failed to update quantity on server:', response.message);
+                        updateCartCount(-1); // Adjust the cart count down if needed
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error updating quantity:', error);
+                    updateCartCount(-1); // Adjust the cart count down if needed
+                }
+            });
+        }
+
+
+        function updateTotal() {
+            var total = 0;
+            document.querySelectorAll('[id^="line-total-"]').forEach(function (element) {
+                total += parseFloat(element.innerText);
+            });
+            document.getElementById('grand-total').innerText = total.toFixed(2);
+        }
+
+        function removeFromCart(cartItemId, quantity) {
+            $.ajax({
+                url: '/CartItems/DeleteConfirmed',
+                type: 'POST',
+                data: { id: cartItemId },
+                success: function (response) {
+                    if (response.success) {
+                        document.getElementById('item-row-' + cartItemId).remove();
+                        var newCartCount = parseInt($('#cart-count').text()) - quantity;
+
+                        if (newCartCount <= 0) {
+                            newCartCount = 0;  // Ensure cart count does not go negative
+                            // Optional: Show "Cart is Empty" message
+
+                        }
+                        window.location.reload();
+                        updateCartCount(newCartCount);
+
+                    } else {
+                        alert('Failed to remove item: ' + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('Error removing item: ' + error);
+                }
+            });
+        }
+        function updateCartCount(change) {
+            var cartCountElement = document.getElementById('cart-count');
+            if (cartCountElement) {
+                var currentCount = parseInt(cartCountElement.textContent) || 0;
+                var newCount = currentCount + change;
+                if (newCount >= 0) { // Make sure we don't go negative
+                    cartCountElement.textContent = newCount;
+                } else {
+                    console.error('Cart count adjustment resulted in negative value:', newCount);
+                }
+            } else {
+                console.error('Cart count element not found.');
+            }
+        }
+    </script>
+</body>
+</html>

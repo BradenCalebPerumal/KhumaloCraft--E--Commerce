@@ -1,0 +1,114 @@
+﻿@model Order 
+
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - KhumaloCraft Emporium</title>
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .order-id {
+            font-size: 1.5rem;
+            color: #283593;
+            margin: 10px 0;
+        }
+
+        .order-status {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .order-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+            .order-details dt {
+                font-weight: bold;
+                color: #283593;
+            }
+
+            .order-details dd {
+                margin-bottom: 10px;
+            }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+            .btn-primary:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">Order Confirmation</div>
+    <div class="container">
+        <h2>Thank You for Your Order!</h2>
+        <p>Your order with ID <span class="order-id">@Model.OrderId</span> has been successfully submitted!</p>
+        <p class="order-status">Status: @Model.OrderStatus</p>
+
+        <div class="order-details">
+            <h3>Order Details</h3>
+            <dl class="row">
+                <dt class="col-sm-4">Order ID:</dt>
+                <dd class="col-sm-8">@Model.OrderId</dd>
+
+                <dt class="col-sm-4">Status:</dt>
+                <dd class="col-sm-8">@Model.OrderStatus</dd>
+
+                <dt class="col-sm-4">Order Date:</dt>
+                <dd class="col-sm-8">@Model.OrderDate.ToString("MMMM dd, yyyy")</dd>
+
+               
+            </dl>
+        </div>
+
+        <a href="@Url.Action("Index", "Products")" class="btn btn-primary">Continue Shopping</a>
+    </div>
+</body>
+</html>

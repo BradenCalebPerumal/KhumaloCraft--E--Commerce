@@ -1,0 +1,282 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KhumaloCraft Emporium</title>
+
+
+
+
+
+
+    <style>
+    /* CSS to set maximum width for the image */
+    .image-container {
+        position: relative;
+        display: inline-block; /* Ensures container wraps around the image */
+    }
+
+    img {
+        max-width: 100%; /* Make sure the image does not exceed the width of its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .shop-now-button {
+        position: absolute;
+        bottom: 37px; /* Adjust as needed to position the button */
+        left: 83%; /* Place the button horizontally centered */
+        transform: translateX(-50%); /* Center the button horizontally */
+        background-color: blue; /* Button background color */
+        color: white; /* Button text color */
+        padding: 10px 20px; /* Button padding */
+        border: none;
+        border-radius: 5px; /* Button border radius */
+    }
+
+        .shop-now-button:hover {
+            background-color: darkblue; /* Button background color on hover */
+        }
+
+    .testimonials-container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center; /* Center align the content */
+    }
+
+    .testimonial {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%; /* Assuming three testimonials in a row */
+        margin: 0 1.5%; /* Spacing between testimonials */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for styling */
+        padding: 10px;
+        padding: 10px;
+        height: auto; 
+        box-sizing: border-box;
+        background: #fff; /* Background color */
+    }
+
+    /* Adjusts the title of the testimonials section */
+    h4 {
+        color: #333;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial p {
+        font-style: italic;
+        color: #555;
+        padding: 0 20px; /* Padding for text inside testimonials */
+    }
+
+    .testimonial-author {
+        font-weight: bold;
+        color: #333;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .testimonial-rating {
+        color: #f5a623;
+        font-size: 18px; /* Adjust as needed */
+        margin-top: 5px; /* Spacing above the rating stars */
+    }
+
+    /* Style the dot navigation */
+    .dot-container {
+        text-align: center;
+        margin-top: 20px; /* Spacing above the dots */
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+        .active-dot, .dot:hover {
+            background-color: #717171;
+        }
+
+    /* Style for the quotation marks */
+    .testimonial:before {
+        content: open-quote;
+        font-size: 50px;
+        color: lightgray;
+        line-height: 0;
+        margin-right: 10px;
+        vertical-align: -20px;
+    }
+
+    /* Style for testimonial container */
+    .testimonial-content {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Custom style for h1 */
+    h1 {
+        text-transform: none;
+        /* ... other styles for h1 ... */
+    }
+
+    .customer-reviews-heading {
+        text-align: center;
+        /* Other styles specifically for the customer reviews heading */
+    }
+
+    
+</style>
+
+</head>
+<body>
+<h1>Welcome to KhumaloCraft Emporium</h1>
+<hr style="height: 2px; background-color: #000; border: none;">
+<h4>Discover a World Where Craftsmanship Meets Global Elegance</h4>
+
+<!-- Container for image and button -->
+<div class="image-container">
+    <!-- Adjusted image with max-width set -->
+    <img src="~/images/craftting_eng.jpg" alt="Craft Image"/>
+    <!-- Shop Now button -->
+    <a href="@Url.Action("Index", "Products")" class="shop-now-button">Shop Now</a>
+</div>
+
+<p>
+    KhumaloCraft Emporium is your one-stop global marketplace that brings the art of the world to your doorstep.
+    Dive into a treasure trove of unique, handcrafted items created with love and passion by artisans from every corner of the globe.
+    Here, every click unfolds a story, every product is a bridge to its maker's traditions, dreams, and heritage.
+</p>
+
+<h4 class="customer-reviews-heading">Customer Reviews</h4>
+<div class="testimonials-container">
+    <!-- Testimonial 1 - active by default -->
+    <div class="testimonial active">
+        <p>"I stumbled upon KhumaloCraft Emporium while searching for unique gifts, and I'm so glad I did! The craftsmanship and attention to detail in their products are truly remarkable. I've purchased several items and have been thrilled with each one.Product quality is awesome and i highly recommend this store!"</p>
+        <div class="testimonial-author">JOHN SMITH</div>
+        <div class="testimonial-rating">★★★★★</div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial active">
+        <p>"As an avid collector of artisanal goods, I'm always on the lookout for new treasures. KhumaloCraft Emporium exceeded my expectations with their diverse selection of handcrafted items. The quality is exceptional, and I love knowing that my purchases support talented artisans around the world. "</p>
+        <div class="testimonial-author">EMILY JOHNSON</div>
+        <div class="testimonial-rating">★★★★★</div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial active">
+        <p>"I recently redecorated my home and wanted to incorporate some one-of-a-kind pieces. KhumaloCraft Emporium was the perfect solution! Their collection of home decor items is unparalleled, and I found exactly what I was looking for. The customer service was excellent, and my order arrived promptly."</p>
+        <div class="testimonial-author">MICHAEL BROWN</div>
+        <div class="testimonial-rating">★★★★★</div>
+    </div>
+
+    <!-- Testimonial 4 -->
+    <div class="testimonial active">
+        <p>"KhumaloCraft  is my go-to destination for unique gifts for friends and family. I've purchased several items from their site and was thrilled with the quality of service. It was rewarding to support these talented artists ."</p>
+        <div class="testimonial-author">SARAH RODRIGUE</div>
+        <div class="testimonial-rating">★★★★★</div>
+    </div>
+
+    <!-- Testimonial 5 -->
+    <div class="testimonial active">
+        <p>"I'm constantly impressed by the variety and beauty of the product available at KhumaloCraft Emporium's .I will highly recommend KhumaloCraft Emporium to anyone looking for high-quality, handcrafted goods"</p>
+        <div class="testimonial-author">DAVID WILSON</div>
+        <div class="testimonial-rating">★★★★★
+    </div>
+</div>
+
+<div class="dot-container">
+    <!-- Dots will be generated by JavaScript -->
+</div>
+
+    <!-- Basic Modal -->
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="basicModalLabel">Welcome!</h5>
+                    <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Would you like to log in or create an account?</p>
+
+                        <a href="@Url.Action("Login", "Customers")" class="btn btn-primary">Login</a>
+                    <a href="@Url.Action("SignUp", "Customers")" class="btn btn-secondary">Create an Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @section Scripts {
+        <script>
+            // Directly inject the session check result into JavaScript
+            var isLoggedIn = @Html.Raw(Context.Session.GetString("IsLoggedIn") == "true" ? "true" : "false");
+
+            $(document).ready(function () {
+                if (!isLoggedIn) {
+                    $("#basicModal").modal('show');
+                }
+
+                $(".custom-close").click(function () {
+                    $("#basicModal").modal('hide');
+                });
+            });
+
+
+
+            // When the document is ready
+        $(document).ready(function () {
+            var testimonialsPerSlide = 3;
+            var totalTestimonials = $('.testimonial').length;
+            var totalDots = Math.ceil(totalTestimonials / testimonialsPerSlide);
+
+            // Function to handle the slide change
+            function changeSlide(index) {
+                var startIndex = index * testimonialsPerSlide;
+                var endIndex = startIndex + testimonialsPerSlide;
+                $('.testimonial').hide().slice(startIndex, endIndex).show();
+                $('.dot').removeClass('active-dot').eq(index).addClass('active-dot');
+            }
+
+            // Initialize the testimonials
+            changeSlide(0);
+
+            // Create the dots
+            for (var i = 0; i < totalDots; i++) {
+                var dot = $('<span>').addClass('dot').on('click', function () {
+                    changeSlide($(this).index());
+                });
+                if (i === 0) dot.addClass('active-dot');
+                $('.dot-container').append(dot);
+            }
+
+            // Expose the changeSlide function to global scope
+            window.currentSlide = changeSlide;
+        });
+
+
+
+
+
+        </script>
+    }
+
+</body>
+</html>
+
+

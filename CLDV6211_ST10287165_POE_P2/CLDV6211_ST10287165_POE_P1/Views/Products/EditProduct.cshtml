@@ -1,0 +1,131 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    .create-container {
+        background: #e8f0fe;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .create-title {
+        color: #204a87;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #c6d9f1;
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: darkblue;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .message {
+        text-align: center;
+        color: #3266a8;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="create-container">
+    <h1 class="create-title">Edit Product</h1>
+
+    @if (Context.Session.GetString("IsClientLoggedIn") == "true")
+    {
+        <form asp-action="EditProduct" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" value="@Model.Name" required class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="Description" required class="form-control">@Model.Description</textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="Price" step="0.01" value="@Model.Price" required class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories"></select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="Quantity" value="@Model.Quantity" required class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="imageType">Image Type:</label>
+                <select id="imageType" name="ImageType" required class="form-control" onchange="toggleImageInput(this.value)">
+                    <option value="Url">URL</option>
+                    <option value="Upload">Upload</option>
+
+                </select>
+            </div>
+            <div class="form-group" id="urlInput" style="display:@(Model.ImageType == "Url" ? "block" : "none");">
+                <label for="imageUrl">Image URL:</label>
+                <input type="text" id="imageUrl" name="ImageUrl" value="@Model.ImageUrl" class="form-control" />
+            </div>
+            <div class="form-group" id="uploadInput" style="display:@(Model.ImageType == "Upload" ? "block" : "none");">
+                <label>Current Image:</label>
+                <img src="@Model.ImageUrl" alt="Current Image" class="img-fluid" />
+                <label for="imageUpload">Upload Image:</label>
+                <input type="file" id="imageUpload" name="ImageFile" class="form-control" />
+            </div>
+
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    }
+    else
+    {
+        <p class="message">Only clients can edit products. <a asp-action="Login" asp-controller="Clients">Login here</a> as a client.</p>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        function toggleImageInput(value) {
+            var urlInput = document.getElementById('urlInput');
+            var uploadInput = document.getElementById('uploadInput');
+            if (value === 'Url') {
+                urlInput.style.display = 'block';
+                uploadInput.style.display = 'none';
+            } else if (value === 'Upload') {
+                urlInput.style.display = 'none';
+                uploadInput.style.display = 'block';
+            } else {
+                urlInput.style.display = 'none';
+                uploadInput.style.display = 'none';
+            }
+        }
+
+        // Initialize visibility based on the current selection
+        document.addEventListener("DOMContentLoaded", function() {
+            var imageTypeSelector = document.getElementById('imageType');
+            toggleImageInput(imageTypeSelector.value);
+        });
+    </script>
+}

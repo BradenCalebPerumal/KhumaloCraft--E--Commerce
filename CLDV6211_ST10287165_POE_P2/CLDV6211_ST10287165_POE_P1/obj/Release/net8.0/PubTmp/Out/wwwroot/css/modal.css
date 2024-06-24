@@ -1,0 +1,30 @@
+#orderDetailsModal .modal-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    #orderDetailsModal .modal-table th, #orderDetailsModal .modal-table td {
+        border: 1px solid #dee2e6;
+        padding: 8px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    #orderDetailsModal .modal-table th {
+        background-color: #f8f9fa;
+        color: #333;
+    }
+
+    #orderDetailsModal .modal-table tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+@media (max-width: 768px) {
+    #orderDetailsModal .modal-table, #orderDetailsModal .modal-table th, #orderDetailsModal .modal-table td {
+        font-size: 14px;
+    }
+
+        #orderDetailsModal .modal-table th, #orderDetailsModal .modal-table td {
+            padding: 6px;
+        }
+}
