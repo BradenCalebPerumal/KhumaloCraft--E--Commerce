@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|c:\\users\\caleb\\source\\repos\\khumalocraftfunction\\khumalocraftfunction\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\cldv6211_st10287165_poe_p1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\cldv6211_st10287165_poe_p1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\khumalofunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\khumalofunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\khumalocraftfunction.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\khumalocraftfunction.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\khumalocraftfunction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B009CC-992C-4740-B5FE-BDBC597B9AF0}|KhumaloCraftFunction\\KhumaloCraftFunction.csproj|solutionrelative:khumalocraftfunction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\User.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\User.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:52:25.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Product.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:52:22.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:52:21.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Order.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:52:19.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:52:09.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Customer.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:52:05.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\CheckoutViewModel.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\CheckoutViewModel.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\CheckoutViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:51:55.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Category.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:51:51.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\CartItem.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:51:48.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Admin.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:51:44.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CLDV6211_ST10287165_POE_P1Context.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\CLDV6211_ST10287165_POE_P1Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:51:22.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "KhumaloCraftFunction",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\KhumaloCraftFunction.csproj",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\KhumaloCraftFunction.csproj",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\KhumaloCraftFunction.csproj",
+              "RelativeToolTip": "KhumaloCraftFunction\\KhumaloCraftFunction.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-24T16:45:50.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KhumaloFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\KhumaloFunction.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\KhumaloFunction.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\KhumaloFunction.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\KhumaloFunction.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:47:08.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Models\\Client.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Models\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:45:59.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "local.settings.json",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\local.settings.json",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\local.settings.json",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\local.settings.json",
+              "RelativeToolTip": "KhumaloCraftFunction\\local.settings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T16:46:57.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Program.cs",
+              "RelativeDocumentMoniker": "KhumaloCraftFunction\\Program.cs",
+              "ToolTip": "C:\\Users\\Caleb\\source\\repos\\KhumaloCraftFunction\\KhumaloCraftFunction\\Program.cs",
+              "RelativeToolTip": "KhumaloCraftFunction\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:46:56.321Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
