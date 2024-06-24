@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj": {}
+    "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\cldv6211---cloud-development---poe-CalebPerumal28\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj": {
+    "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\cldv6211---cloud-development---poe-CalebPerumal28\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj",
+        "projectUniqueName": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\cldv6211---cloud-development---poe-CalebPerumal28\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj",
         "projectName": "CLDV6211_ST10287165_POE_P1",
-        "projectPath": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj",
+        "projectPath": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\cldv6211---cloud-development---poe-CalebPerumal28\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\CLDV6211_ST10287165_POE_P1.csproj",
         "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\obj\\",
+        "outputPath": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Pictures\\cldv6211---cloud-development---poe-CalebPerumal28\\CLDV6211_ST10287165_POE_P2\\CLDV6211_ST10287165_POE_P1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

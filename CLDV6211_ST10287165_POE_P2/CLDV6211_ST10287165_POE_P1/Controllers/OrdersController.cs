@@ -307,7 +307,7 @@ namespace CLDV6211_ST10287165_POE_P1.Controllers
         private async Task<string> CallDurableFunction(string confirmationJson)
         {
             var httpClient = new HttpClient();
-            var response = await httpClient.PostAsync("https://st10287165poefunctions20240622212132.azurewebsites.net", new StringContent(confirmationJson, Encoding.UTF8, "application/json"));
+            var response = await httpClient.PostAsync("https://khumalocraftfunction20240624184822.azurewebsites.net/", new StringContent(confirmationJson, Encoding.UTF8, "application/json"));
             return await response.Content.ReadAsStringAsync();
         }
 
