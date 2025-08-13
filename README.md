@@ -198,13 +198,13 @@ ABC Retailers is licensed under the MIT License. You are free to use, modify, an
 ---
 
 ## 16) Demonstration Video Link
-[▶️ Watch Demo](https://your-demo-link-here)
+[▶️ Watch Demo](https://dlssa-my.sharepoint.com/:v:/g/personal/caleb_dlssa_onmicrosoft_com/ES3p3bwFph9MnhouMrOc6QYBINoMjOt-LWQu1Ag5gue6Pg?e=CJVEfT)
 
 ---
 
 ## 17) Admin Login Credentials
-⚠️ For demo purposes only:
-- Create account via registration, assign Admin role manually.
+> ⚠️ **Note:** For demonstration purposes, the **Admin** can create an account and log in directly.  
+> This is **not** a production practice — in a real deployment, accounts will be seeded and roles properly assigned.
 
 ---
 
