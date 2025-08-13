@@ -54,13 +54,15 @@ KhumaloCraft Emporium is a **global e-commerce platform** connecting artisans wi
 ### Sample `appsettings.json`:
 ```json
 {
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=tcp:<your-server>.database.windows.net,1433;Initial Catalog=<your-db>;Persist Security Info=False;User ID=<your-user>;Password=<your-pass>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
   },
-  "AzureSearch": {
-    "ServiceName": "<your-search-service>",
-    "ApiKey": "<your-api-key>",
-    "IndexName": "products-index"
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+"CLDV6211_ST10287165_POE_P1Context": "Server=tcp:YOUR_SERVER_NAME.database.windows.net,1433;Initial Catalog=YOUR_DATABASE_NAME;Persist Security Info=False;User ID=YOUR_USERNAME;Password=YOUR_PASSWORD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   }
 }
 ```
